@@ -14,6 +14,9 @@
 		CD8944852BA9506A00C3462C /* FetchTakeHomeProjTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8944842BA9506A00C3462C /* FetchTakeHomeProjTests.swift */; };
 		CD89448F2BA9506A00C3462C /* FetchTakeHomeProjUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD89448E2BA9506A00C3462C /* FetchTakeHomeProjUITests.swift */; };
 		CD8944912BA9506A00C3462C /* FetchTakeHomeProjUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8944902BA9506A00C3462C /* FetchTakeHomeProjUITestsLaunchTests.swift */; };
+		CD89449E2BAA8F0D00C3462C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD89449D2BAA8F0D00C3462C /* Item.swift */; };
+		CD8944A02BAA8F3200C3462C /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD89449F2BAA8F3200C3462C /* DataService.swift */; };
+		CD8944A62BAABFAD00C3462C /* MockURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8944A52BAABFAD00C3462C /* MockURL.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		CD89448A2BA9506A00C3462C /* FetchTakeHomeProjUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FetchTakeHomeProjUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD89448E2BA9506A00C3462C /* FetchTakeHomeProjUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchTakeHomeProjUITests.swift; sourceTree = "<group>"; };
 		CD8944902BA9506A00C3462C /* FetchTakeHomeProjUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchTakeHomeProjUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CD89449D2BAA8F0D00C3462C /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		CD89449F2BAA8F3200C3462C /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		CD8944A52BAABFAD00C3462C /* MockURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURL.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,9 +101,12 @@
 			isa = PBXGroup;
 			children = (
 				CD8944732BA9506800C3462C /* FetchTakeHomeProjApp.swift */,
+				CD89449D2BAA8F0D00C3462C /* Item.swift */,
+				CD89449F2BAA8F3200C3462C /* DataService.swift */,
 				CD8944752BA9506800C3462C /* ContentView.swift */,
 				CD8944772BA9506900C3462C /* Assets.xcassets */,
 				CD8944792BA9506900C3462C /* Preview Content */,
+				CD8944A52BAABFAD00C3462C /* MockURL.swift */,
 			);
 			path = FetchTakeHomeProj;
 			sourceTree = "<group>";
@@ -258,7 +267,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD8944762BA9506800C3462C /* ContentView.swift in Sources */,
+				CD8944A62BAABFAD00C3462C /* MockURL.swift in Sources */,
+				CD89449E2BAA8F0D00C3462C /* Item.swift in Sources */,
 				CD8944742BA9506800C3462C /* FetchTakeHomeProjApp.swift in Sources */,
+				CD8944A02BAA8F3200C3462C /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

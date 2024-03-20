@@ -1,24 +1,24 @@
-//
-//  ContentView.swift
-//  FetchTakeHomeProj
-//
-//  Created by Lee on 3/19/24.
-//
-
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var dataService = DataService()
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationView {
+            List {
+                ForEach(dataService.items.sorted(by: { $0.key < $1.key }), id: \.key) { listId, items in
+                    Section(header: Text("List ID: \(listId)")) {
+                        ForEach(items) { item in
+                            Text("\(item.name ?? "No name")")
+                        }
+                    }
+                }
+            }
+            .navigationTitle("Items")
+            .onAppear {
+                dataService.fetchData()
+            }
         }
-        .padding()
     }
 }
 
-#Preview {
-    ContentView()
-}
